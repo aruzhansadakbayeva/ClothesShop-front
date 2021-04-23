@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-wear-list></app-wear-list>
+  </div>
+  <div class="col-md-7">
+    <app-wear-detail
+      *ngIf="selectedWear; else infoText"
+      [wear]="selectedWear"></app-wear-detail>
+    <ng-template #infoText>
+      <p>
+        Please select a Wear!</p>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<nav class = "navbar navbar-default">
+  <div class = "container-fluid">
+    <div class = "navbar-header">
+      <a href="#" class ="navbar-brand"> DESIGNER CLOTHING </a>
+    </div>
+
+
+
+    <ul class = "nav navbar-nav navbar-left">
+      <li class = "dropdown" appDropdown>
+        <a href="#" (click)="onSelect('wear')"  class="dropdown-toggle" role="button"> WEAR <span class="caret"></span></a>
+        <ul class = "dropdown-menu">
+          <li> <a href="#"> TSHIRTS </a></li>
+          <li> <a href="#"> HOODY </a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class = "nav navbar-nav navbar-left">
+      <li class = "dropdown" appDropdown>
+        <a href="#" (click)="onSelect('accessory')" class="dropdown-toggle" role="button"> ACCESSORIES <span class="caret"></span></a>
+        <ul class = "dropdown-menu">
+          <li> <a href="#"> SOCKS </a></li>
+          <li> <a href="#"> CAPS </a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-left">
+      <li> <a href="#" > ABOUT US </a> </li>
+    </ul>
+  </div>
+</nav>
