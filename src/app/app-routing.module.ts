@@ -9,7 +9,7 @@ import {AccessoryStartComponent} from './accessories/accessory-start/accessory-s
 import {AccessoryDetailComponent} from './accessories/accessory-detail/accessory-detail.component';
 
 const appRoutes: Routes = [
-  {path: '', redirectTo: '/wear', pathMatch: 'full'},
+  {path: '', redirectTo: '/about', pathMatch: 'full'},
   {path: 'wear', component: WearComponent, children: [
       { path: '', component: WearStartComponent},
       { path: ':id', component: WearDetailComponent}
