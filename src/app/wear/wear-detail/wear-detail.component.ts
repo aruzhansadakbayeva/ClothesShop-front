@@ -1,5 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { ActivatedRoute, Params } from '@angular/router';
 import {Wear} from '../wear.model';
+import {WearService} from '../wear.service';
 
 @Component({
   selector: 'app-wear-detail',
@@ -7,10 +10,19 @@ import {Wear} from '../wear.model';
   styleUrls: ['./wear-detail.component.css']
 })
 export class WearDetailComponent implements OnInit {
-  @Input() wear: Wear;
-  constructor() { }
+  wear: Wear;
+  id: number;
+  constructor(private wearService: WearService,
+              private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.id = +params['id'];
+          this.wear = this.wearService.getWearr(this.id);
+        }
+      );
   }
 
 }

@@ -4,7 +4,8 @@
 
     <app-accessory-item
 
-      *ngFor="let accessoryEl of accessories"
-      [accessory]="accessoryEl"> </app-accessory-item>
+      *ngFor="let accessoryEl of accessories; let i = index"
+      [accessory]="accessoryEl"
+      [index]="i"> </app-accessory-item>
   </div>
 </div>

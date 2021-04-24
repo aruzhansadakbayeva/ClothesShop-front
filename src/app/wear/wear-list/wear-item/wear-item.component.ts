@@ -1,6 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { Wear} from '../../wear.model';
-import {WearService} from '../../wear.service';
 
 @Component({
   selector: 'app-wear-item',
@@ -9,11 +8,8 @@ import {WearService} from '../../wear.service';
 })
 export class WearItemComponent implements OnInit {
   @Input() wear: Wear;
-  constructor(private wearService: WearService) { }
-
+  @Input() index: number;
   ngOnInit() {
   }
-  onSelected() {
-    this.wearService.wearSelected.emit(this.wear);
-  }
+
 }

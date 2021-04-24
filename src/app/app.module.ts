@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import {AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { WearComponent } from './wear/wear.component';
@@ -16,6 +16,8 @@ import { AccessoryListComponent } from './accessories/accessory-list/accessory-l
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import {DropdownDirective} from './shared/dropdown.directive';
+import { WearStartComponent } from './wear/wear-start/wear-start.component';
+import { AccessoryStartComponent } from './accessories/accessory-start/accessory-start.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,14 @@ import {DropdownDirective} from './shared/dropdown.directive';
     AccessoryListComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective
+    DropdownDirective,
+    WearStartComponent,
+    AccessoryStartComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

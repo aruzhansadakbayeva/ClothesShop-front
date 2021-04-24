@@ -9,5 +9,8 @@ export class AccessoryService {
   getAccessories() {
     return this.accessories.slice();
   }
+  getAccessory(index: number) {
+    return this.accessories[index];
+  }
 }
 

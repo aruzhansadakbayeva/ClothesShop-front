@@ -3,12 +3,6 @@
     <app-accessory-list></app-accessory-list>
   </div>
   <div class="col-md-7">
-    <app-accessory-detail
-      *ngIf="selectedAccessory; else infoText"
-      [accessory]="selectedAccessory"></app-accessory-detail>
-    <ng-template #infoText>
-      <p>
-        Please select an Accessory!</p>
-    </ng-template>
+    <router-outlet> </router-outlet>
   </div>
 </div>

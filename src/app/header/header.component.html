@@ -4,30 +4,28 @@
       <a href="#" class ="navbar-brand"> DESIGNER CLOTHING </a>
     </div>
 
-
-
     <ul class = "nav navbar-nav navbar-left">
-      <li class = "dropdown" appDropdown>
-        <a href="#" (click)="onSelect('wear')"  class="dropdown-toggle" role="button"> WEAR <span class="caret"></span></a>
+      <li routerLinkActive="active" class = "dropdown" appDropdown>
+        <a routerLink="/wear"  class="dropdown-toggle" role="button"> WEAR <span class="caret"></span></a>
         <ul class = "dropdown-menu">
-          <li> <a href="#"> TSHIRTS </a></li>
-          <li> <a href="#"> HOODY </a></li>
+          <li> <a style="cursor: pointer;"> TSHIRTS </a></li>
+          <li> <a style="cursor: pointer;"> HOODY </a></li>
         </ul>
       </li>
     </ul>
 
     <ul class = "nav navbar-nav navbar-left">
-      <li class = "dropdown" appDropdown>
-        <a href="#" (click)="onSelect('accessory')" class="dropdown-toggle" role="button"> ACCESSORIES <span class="caret"></span></a>
+      <li routerLinkActive="active" class = "dropdown" appDropdown>
+        <a routerLink="/accessories" class="dropdown-toggle" role="button"> ACCESSORIES <span class="caret"></span></a>
         <ul class = "dropdown-menu">
-          <li> <a href="#"> SOCKS </a></li>
-          <li> <a href="#"> CAPS </a></li>
+          <li> <a style="cursor: pointer;"> SOCKS </a></li>
+          <li> <a style="cursor: pointer;"> CAPS </a></li>
         </ul>
       </li>
     </ul>
 
     <ul class="nav navbar-nav navbar-left">
-      <li> <a href="#" > ABOUT US </a> </li>
+      <li routerLinkActive="active"> <a routerLink="/about" > ABOUT US </a> </li>
     </ul>
   </div>
 </nav>

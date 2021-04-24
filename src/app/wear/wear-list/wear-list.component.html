@@ -4,9 +4,8 @@
 
     <app-wear-item
 
-      *ngFor="let wearEl of wear"
-      [wear]="wearEl">
-
-    </app-wear-item>
+      *ngFor="let wearEl of wear; let i = index"
+      [wear]="wearEl"
+      [index]="i"></app-wear-item>
   </div>
 </div>

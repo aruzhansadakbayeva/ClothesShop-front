@@ -1,16 +1,17 @@
-
 <a
-  href="#" class="list-group-item clearfix"
-  (click)="onSelected()">
-  <div class = "pull-left">
-    <h4 class = "list-group-item-heading">{{accessory.name}}</h4>
-    <p class = "list-group-item-text"> {{accessory.price}} </p>
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ accessory.name }}</h4>
+    <p class="list-group-item-text">{{ accessory.price }}</p>
   </div>
   <span class="pull-right">
         <img
           [src]="accessory.imagePath"
-          alt="{{accessory.name}}"
+          alt="{{ accessory.name }}"
           class="img-responsive"
-          style="max-height:50px">
+          style="max-height: 50px;">
       </span>
 </a>
