@@ -3,29 +3,16 @@
     <div class = "navbar-header">
       <a href="#" class ="navbar-brand"> DESIGNER CLOTHING </a>
     </div>
-
-    <ul class = "nav navbar-nav navbar-left">
-      <li routerLinkActive="active" class = "dropdown" appDropdown>
-        <a routerLink="/wear"  class="dropdown-toggle" role="button"> WEAR <span class="caret"></span></a>
-        <ul class = "dropdown-menu">
-          <li> <a style="cursor: pointer;"> TSHIRTS </a></li>
-          <li> <a style="cursor: pointer;"> HOODY </a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <ul class = "nav navbar-nav navbar-left">
-      <li routerLinkActive="active" class = "dropdown" appDropdown>
-        <a routerLink="/accessories" class="dropdown-toggle" role="button"> ACCESSORIES <span class="caret"></span></a>
-        <ul class = "dropdown-menu">
-          <li> <a style="cursor: pointer;"> SOCKS </a></li>
-          <li> <a style="cursor: pointer;"> CAPS </a></li>
-        </ul>
-      </li>
+    <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a routerLink="/wear">WEAR</a></li>
+      <li routerLinkActive="active"><a routerLink="/accessories">ACCESSORIES</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-left">
       <li routerLinkActive="active"> <a routerLink="/about" > ABOUT US </a> </li>
     </ul>
+    </div>
   </div>
 </nav>
+

@@ -4,6 +4,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import {Wear} from '../wear.model';
 import {WearService} from '../wear.service';
 
+
 @Component({
   selector: 'app-wear-detail',
   templateUrl: './wear-detail.component.html',

@@ -11,7 +11,8 @@ export class WearListComponent implements OnInit {
   wear: Wear[];
   constructor(private wearService: WearService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.wear = this.wearService.getWear();
   }
+
 }
