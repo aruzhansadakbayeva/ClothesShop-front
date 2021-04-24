@@ -18,7 +18,8 @@ const appRoutes: Routes = [
       {path: '', component: AccessoryStartComponent},
       {path: ':id', component: AccessoryDetailComponent}
     ]},
-  {path: 'about', component: AboutComponent}
+  {path: 'about', component: AboutComponent},
+
 ];
 
 @NgModule({
